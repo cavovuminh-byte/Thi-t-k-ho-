@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | Học lập trình hiệu quả</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;700;800&family=Lora&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #4f46e5;
+    --bg: #f8fafc;
+    --text: #1e293b;
+    --muted: #64748b;
+    --code-bg: #1e1e1e; /* Màu nền tối chuyên dụng cho code */
+}
+
+body {
+    font-family: 'Lora', serif;
+    background: var(--bg);
+    color: var(--text);
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 20px;
+    line-height: 1.7;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.blog-meta {
+    font-family: 'Inter', sans-serif;
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+.sapo {
+    border-left: 5px solid var(--primary);
+    padding-left: 15px;
+    font-style: italic;
+    background: #eef2ff;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+pre {
+    background: var(--code-bg);
+    color: #d4d4d4;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    border: 1px solid #333;
+}
+
+code {
+    background: #e2e8f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+pre code {
+    background: transparent;
+    padding: 0;
+}
+
+/* Syntax Highlighting Colors */
+.comment { color: #6a9955; }
+.keyword { color: #569cd6; }
+.function { color: #dcdcaa; }
+.string { color: #ce9178; }
+.number { color: #b5cea8; }
+.tag { color: #569cd6; }
+.attr { color: #9cdcfe; }
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+    color: var(--muted);
+    font-family: 'Inter', sans-serif;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <span class="blog-meta">Lập trình • 18/03/2026</span>
+    <h1>Học lập trình từ con số 0: Lộ trình đơn giản nhưng hiệu quả</h1>
+
+    <div class="sapo">
+        Nếu bạn đang bắt đầu học lập trình nhưng cảm thấy quá tải, bài viết này sẽ giúp bạn có một lộ trình rõ ràng, dễ hiểu và thực tế nhất.
+    </div>
+</header>
+
+<main>
+
+<p>
+Lập trình là một kỹ năng quan trọng trong thời đại số. Tuy nhiên, rất nhiều người bỏ cuộc chỉ sau vài tuần vì không biết nên học gì trước và học như thế nào cho hiệu quả.
+</p>
+
+<h2>1. Bắt đầu từ nền tảng cơ bản</h2>
+<p>
+Hãy bắt đầu với các công nghệ nền tảng như <code>HTML</code>, <code>CSS</code> và <code>JavaScript</code>. Đây là bộ ba quan trọng giúp bạn hiểu cách web hoạt động.
+</p>
+
+<h2>2. Đừng học lan man</h2>
+<p>
+Một sai lầm phổ biến là học quá nhiều thứ cùng lúc. Bạn chỉ nên tập trung vào một hướng, ví dụ: Frontend, Backend hoặc Mobile app.
+</p>
+
+<h2>3. Thực hành mỗi ngày</h2>
+
+<p>
+Học lập trình giống như tập gym. Thay vì chỉ đọc lý thuyết, hãy bắt tay vào viết những dòng code nhỏ nhất để tạo thói quen tư duy.
+</p>
+
+<p><strong>Ví dụ 1:</strong> Tạo hàm tính tổng trong JavaScript</p>
+<pre><code><span class="comment">// Hàm tính tổng 2 số</span>
+<span class="keyword">function</span> <span class="function">sum</span>(a, b) {
+    <span class="keyword">return</span> a + b;
+}
+
+<span class="comment">// Gọi hàm và in kết quả</span>
+console.<span class="function">log</span>(<span class="function">sum</span>(<span class="number">5</span>, <span class="number">3</span>)); <span class="comment">// Kết quả: 8</span></code></pre>
+
+<p><strong>Ví dụ 2:</strong> Tạo một nút bấm HTML đơn giản</p>
+<pre><code><span class="comment">&lt;!-- Nút bấm hiển thị thông báo --&gt;</span>
+<span class="tag">&lt;button</span> <span class="attr">onclick</span>=<span class="string">"alert('Hello!')"</span><span class="tag">&gt;</span>
+    Bấm vào đây
+<span class="tag">&lt;/button&gt;</span></code></pre>
+
+<h2>4. Xây dựng dự án cá nhân</h2>
+<p>
+Sau khi nắm được kiến thức cơ bản, hãy thử tạo ra sản phẩm của riêng bạn như Website cá nhân hoặc ứng dụng quản lý công việc.
+</p>
+
+<h2>5. Kiên trì và không bỏ cuộc</h2>
+<p>
+Sẽ có lúc bạn cảm thấy bế tắc, nhưng đó là điều bình thường. Hãy tiếp tục học, hỏi và thực hành.
+</p>
+
+</main>
+
+<footer>
+© 2026 Blog Lập Trình | Thiết kế bởi bạn
+</footer>
+
+</body>
+</html>
